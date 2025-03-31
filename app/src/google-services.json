@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "879136355840",
+    "project_id": "soyunaratilla-8bfd7",
+    "storage_bucket": "soyunaratilla-8bfd7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:879136355840:android:a7752336747f1340d70ae5",
+        "android_client_info": {
+          "package_name": "com.jorgegimeno.soyunaratilla"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCns4fQE6zxgqNyQzbf4VlZ_SPQj-Y9PTI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:879136355840:android:14467f3657f5f181d70ae5",
+        "android_client_info": {
+          "package_name": "com.jorgegimeno.soyunaratilla.debug"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCns4fQE6zxgqNyQzbf4VlZ_SPQj-Y9PTI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

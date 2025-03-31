@@ -2,6 +2,13 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    // HILT
+    alias(libs.plugins.hilt)
+    id("kotlin-kapt")
+    // GOOGLE SERVICES
+    alias(libs.plugins.google.services)
+    // FIREBASE
+    alias(libs.plugins.crashlytics)
 }
 
 android {
@@ -26,6 +33,11 @@ android {
                 "proguard-rules.pro"
             )
         }
+        getByName("debug"){
+            applicationIdSuffix=".debug"
+            isDebuggable=true
+        }
+
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -40,6 +52,18 @@ android {
 }
 
 dependencies {
+
+    // HILT
+    implementation(libs.hilt.android)
+    implementation(libs.androidx.hilt.navigation.compose)
+    kapt(libs.hilt.compiler)
+
+    //FIREBASE
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.analytics)
+    implementation(libs.firebase.crashlytics)
+    implementation(libs.firebase.auth)
+    implementation(libs.firebase.firestore)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
